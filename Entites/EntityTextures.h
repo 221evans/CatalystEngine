@@ -8,10 +8,17 @@
 #include "raylib.h"
 
 typedef struct PlayerTextures {
-
     Texture2D playerIdleTexture;
-    Texture2D playerWalkTexture;
-    Texture2D playerRunTexture;
+    Texture2D playerRunSideTexture;
+    Texture2D playerRunUpTexture;
+    Texture2D playerRunDownTexture;
+    Texture2D playerCurrentTexture;
 }PlayerTextures;
+
+
+typedef struct EnemyTextures {
+    Texture2D enemyIdleTexture;
+    Texture2D enemyRunSideTexture;
+}EnemyTextures;
 
 #endif //CATALYSTENGINE_ENTITYTEXTURES_H
