@@ -15,7 +15,7 @@ set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(BUILD_GAMES OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(raylib)
 
-add_executable(CatalystEngine main.c
+add_library(CatalystEngine STATIC
         Flags/Flags.h
         Entites/EntityTextures.h
         Input/KeyboardInput.c
