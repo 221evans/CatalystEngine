@@ -5,6 +5,10 @@
 #ifndef CATALYSTENGINE_ENTITYTEXTURES_H
 #define CATALYSTENGINE_ENTITYTEXTURES_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "raylib.h"
 
 typedef struct PlayerTextures {

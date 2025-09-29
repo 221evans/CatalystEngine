@@ -5,6 +5,10 @@
 #ifndef CATALYSTENGINE_KEYBOARDINPUT_H
 #define CATALYSTENGINE_KEYBOARDINPUT_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "raylib.h"
 
 typedef enum {

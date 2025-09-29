@@ -5,6 +5,10 @@
 #ifndef CATALYSTENGINE_FLAGS_H
 #define CATALYSTENGINE_FLAGS_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct SharedFlags {
     bool isFacingLeft;
     bool isRunningSide;
