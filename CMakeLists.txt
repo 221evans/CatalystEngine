@@ -22,7 +22,12 @@ add_library(CatalystEngine STATIC
         Input/KeyboardInput.h)
 target_link_libraries(CatalystEngine PRIVATE raylib)
 
-
+target_include_directories(CatalystEngine PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/Entities
+        ${CMAKE_CURRENT_SOURCE_DIR}/Flags
+        ${CMAKE_CURRENT_SOURCE_DIR}/Input
+)
 
 # On Linux/BSD, link additional system libs if needed
 if(UNIX AND NOT APPLE)
