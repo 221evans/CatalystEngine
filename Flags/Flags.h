@@ -9,16 +9,17 @@
 extern "C" {
 #endif
 
-typedef struct SharedFlags {
+typedef struct Flags {
     bool isFacingLeft;
     bool isRunningSide;
     bool isAttacking;
-}SharedFlags;
+    bool isMoving;
+    bool isJumping;
+    bool isDead;
+    bool isHit;
 
-typedef struct PlayerFlags {
-    bool isFacingDown;
-    bool isFacingUp;
-}PlayerFlags;
+}Flags;
+
 
 #ifdef __cplusplus
 }
