@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.0)
+cmake_minimum_required(VERSION 3.16)
 project(CatalystEngine C)
 
 set(CMAKE_C_STANDARD 23)
@@ -6,9 +6,9 @@ set(CMAKE_C_STANDARD 23)
 # Add FetchContent to pull raylib at configure time
 include(FetchContent)
 FetchContent_Declare(
-  raylib
-  GIT_REPOSITORY https://github.com/raysan5/raylib.git
-  GIT_TAG 5.5
+        raylib
+        GIT_REPOSITORY https://github.com/raysan5/raylib.git
+        GIT_TAG 5.5
 )
 # Disable building examples/shaders to speed up
 set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
@@ -20,7 +20,9 @@ add_library(CatalystEngine STATIC
         Entites/EntityTextures.h
         Input/KeyboardInput.c
         Input/KeyboardInput.h)
-target_link_libraries(CatalystEngine PRIVATE raylib)
+
+# Link raylib as PUBLIC so that projects linking to CatalystEngine get raylib too
+target_link_libraries(CatalystEngine PUBLIC raylib)
 
 target_include_directories(CatalystEngine PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}
