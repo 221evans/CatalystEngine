@@ -25,4 +25,9 @@ typedef struct EnemyTextures {
     Texture2D enemyRunSideTexture;
 }EnemyTextures;
 
+#ifdef __cplusplus
+}
+#endif
+
 #endif //CATALYSTENGINE_ENTITYTEXTURES_H
+

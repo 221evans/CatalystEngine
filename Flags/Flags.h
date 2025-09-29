@@ -20,4 +20,7 @@ typedef struct PlayerFlags {
     bool isFacingUp;
 }PlayerFlags;
 
+#ifdef __cplusplus
+}
+#endif
 #endif //CATALYSTENGINE_FLAGS_H

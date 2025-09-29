@@ -21,4 +21,8 @@ typedef enum {
 
 MoveDirection GetMoveDirection(void);
 
+#ifdef __cplusplus
+}
+#endif
+
 #endif //CATALYSTENGINE_KEYBOARDINPUT_H
