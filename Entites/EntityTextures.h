@@ -11,19 +11,15 @@ extern "C" {
 
 #include "raylib.h"
 
-typedef struct PlayerTextures {
-    Texture2D playerIdleTexture;
-    Texture2D playerRunSideTexture;
-    Texture2D playerRunUpTexture;
-    Texture2D playerRunDownTexture;
-    Texture2D playerCurrentTexture;
-}PlayerTextures;
+typedef struct EntityTextures {
+    Texture2D idleTexture;
+    Texture2D runSideTexture;
+    Texture2D runUpTexture;
+    Texture2D runDownTexture;
+    Texture2D attackTexture;
+    Texture2D currentTexture;
 
-
-typedef struct EnemyTextures {
-    Texture2D enemyIdleTexture;
-    Texture2D enemyRunSideTexture;
-}EnemyTextures;
+}EntityTextures;
 
 #ifdef __cplusplus
 }
