@@ -12,6 +12,8 @@ extern "C" {
 typedef struct Flags {
     bool isFacingLeft;
     bool isRunningSide;
+    bool isRunningUp;
+    bool isRunningDown;
     bool isAttacking;
     bool isMoving;
     bool isJumping;
