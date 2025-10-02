@@ -17,7 +17,6 @@ typedef struct Flags {
     bool isJumping;
     bool isDead;
     bool isHit;
-
 }Flags;
 
 

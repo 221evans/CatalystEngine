@@ -19,7 +19,9 @@ add_library(CatalystEngine STATIC
         Flags/Flags.h
         Entites/EntityTextures.h
         Input/KeyboardInput.c
-        Input/KeyboardInput.h)
+        Input/KeyboardInput.h
+        Animation/Animation.c
+        Animation/Animation.h)
 
 # Link raylib as PUBLIC so that projects linking to CatalystEngine get raylib too
 target_link_libraries(CatalystEngine PUBLIC raylib)
@@ -29,6 +31,7 @@ target_include_directories(CatalystEngine PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/Entities
         ${CMAKE_CURRENT_SOURCE_DIR}/Flags
         ${CMAKE_CURRENT_SOURCE_DIR}/Input
+        ${CMAKE_CURRENT_SOURCE_DIR}/Animation
 )
 
 # On Linux/BSD, link additional system libs if needed
